@@ -1,0 +1,276 @@
+/* ------- CLASSI GENERICHE -----
+
+BONUS VAI SU GETWAVES.IO PER INSERIRE LE ONDE
+
+*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:Helvetica, sans-serif;
+}
+.container {
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    border-radius: 28px;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+
+}
+
+
+.btn.btn-big {
+    padding: 16px 32px;
+} 
+
+.btn.btn-black {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn.btn-blue {
+    background-color: #a297b8;
+    color: #fff;
+    margin: 20px 25%;
+}
+
+
+
+/*CLASSI PER VERIFICIARE IL CORRETTO FUNZIONAMENTO DELLA PAGINA DA ELIMINARE DOPO*/
+.debug {
+    height: 500px;
+}
+
+.debug .container {
+    border: 1px solid black;
+}
+
+
+
+/* ------ HEADER ------*/
+
+header {
+    background-color: #0056de;
+    height: 100px;
+    line-height: 100px;
+    font-weight: bold;
+    
+}
+
+
+
+#logo {
+    float: left;
+    width: 15%;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+header nav {
+    float: left;
+    width: 70%;
+}
+
+header nav ul {
+    text-align: center;
+    
+}
+
+header nav ul li {
+    display: inline-block;
+    
+}
+
+header nav ul li a {
+    color:white;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+#login {
+    float: right;
+    width: 15%;
+    text-align: right;
+}
+
+#login .btn {
+    display: inline;  /* per fixare problema del tasto login*/
+}
+
+
+
+
+/* ------ JUMBOTRON ------*/
+
+
+#jumbotron {
+    background-image: url(jumbo.png);  /*inserire foto jumbotron e togliere backg color*/
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#jumbotron .container {
+    max-width: 780px;
+    text-align: center;
+
+}
+
+#jumbotron h1 {
+    padding-top: 100px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+#jumbotron p {
+    line-height: 200%;
+    margin-bottom: 30px;
+}
+
+#jumbotron .container .btn.btn-black {
+    margin-left: 20px;
+}
+
+
+/* ------ MAIN ------*/
+
+.section::after {
+    content: "";
+    display: table;     /*regole clearfix*/
+    clear: both;
+}
+
+main::after{
+    content: "";
+    display: table;     /*regole clearfix*/
+    clear: both;
+}
+
+
+.container .copywrite1 h2 {
+    font-size: 45px;
+}
+
+.container .copywrite1 p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.section {
+    margin: 200px auto;
+}
+
+/* ----- PRIMA SEZIONE MAIN------*/
+
+
+
+#sec1 .container img {
+    width: 50%;
+    float: left;
+}
+
+#sec1 .container .copywrite1 {
+    width: 30%;
+    float: right;
+}
+
+
+/* ----- SECONDA SEZIONE MAIN------*/
+
+#sec2 .container img {
+    width: 50%;
+    float: right;
+}
+
+#sec2 .container .copywrite1 {
+    width: 30%;
+    float: left;
+}
+
+/* ----- TERZA SEZIONE MAIN------*/
+
+#sec3 .container img {
+    width: 50%;
+    float: left;
+}
+
+#sec3 .container .copywrite1 {
+    width: 30%;
+    float: right;
+}
+
+
+/* ----- QUARTA SEZIONE MAIN------*/
+
+.copywrite2{
+    text-align: center;
+}
+
+.copywrite2 h2 {
+    font-size: 45px;
+}
+
+.copywrite2 p{
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.img-container{
+    width: 60%;
+    margin: auto;
+}
+
+
+
+/*-----ULTIMO MINI-BANNER ------*/
+
+.call-to-action {
+    width: 30%;
+    margin: auto;
+    background-image: url("/stars.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.call-to-action h2 {
+    text-align: center;
+}
+
+.final-btn {
+    width: 30%;
+    margin: auto;
+    
+}
+
+
+
+/* ------ FOOTER ------*/
+
+
+
+footer {
+    background-color: grey;
+}
