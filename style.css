@@ -54,6 +54,7 @@ html {
 
 
 
+
 /*CLASSI PER VERIFICIARE IL CORRETTO FUNZIONAMENTO DELLA PAGINA DA ELIMINARE DOPO*/
 .debug {
     height: 500px;
@@ -178,7 +179,8 @@ main::after{
 }
 
 .section {
-    margin: 200px auto;
+    margin-top: 0px auto;
+    padding-top: 200px;
 }
 
 /* ----- PRIMA SEZIONE MAIN------*/
@@ -194,6 +196,11 @@ main::after{
     width: 30%;
     float: right;
 }
+
+.container-section{
+    background-color: #f6f6f6;
+}
+
 
 
 /* ----- SECONDA SEZIONE MAIN------*/
@@ -222,6 +229,13 @@ main::after{
 
 
 /* ----- QUARTA SEZIONE MAIN------*/
+
+
+
+.container-sec2{
+    background-color: #f6f6f6;
+    width: 100vw;
+}
 
 .copywrite2{
     text-align: center;
